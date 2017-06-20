@@ -1,0 +1,20 @@
+BASINS 4 and BASINS 3 can co-exist under the same /BASINS/
+folder and still function properly.
+
+If this computer has BASINS version 3.1 installed, then
+install BASINS 4 under the current /BASINS/ folder. This 
+will update some of the files used by BASINS 3.1.
+If BASINS 4 is later removed and not reinstalled, then BASINS 3.1
+will need to be re-installed and patched with the latest update.
+
+If this computer has a beta version of BASINS 4, then the beta
+should be uninstalled prior to installation of BASINS 4.
+
+Note: If Microsoft's .NET framework is not on the computer,
+then the install will direct you to install the .NET framework
+from the web before installing BASINS.
+( http://msdn2.microsoft.com/en-us/netframework/default.aspx )
+
+
+
+

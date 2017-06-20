@@ -1,0 +1,457 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+     **********************************************************************
+
+             WASP  - - WATER QUALITY ANALYSIS SIMULATION PROGRAM
+
+     **********************************************************************
+ 
+
+                               Supported by
+                  Center for Exposure Assessment Modeling
+                                  (CEAM)
+                  Athens Environmental Research Laboratory
+                            College Station Road
+                          Athens, Georgia  30613
+                      FTS 250-3491 or (404) 546-3491
+
+
+                               Version 4.32      
+                   Compiled on: Date: Wednesday, 4 March 1992.
+
+
+                       Maximum Parameters for this Model
+
+             Systems:    8           Segments:   40     Break Points:    5
+          Parameters:   15          Constants:  104    Boundary Cond:    5
+         Waste Loads:    5     Print Interval:    5    Time Function:   23
+             
+
+     **********************************************************************
+
+
+
+     No. Segments --->     4        No. Systems --->     1
+
+
+ 
+
+     **********************************************************************                         TIME VARIABLE SOLUTION TECHNIQUE
+
+     **********************************************************************
+             System Bypass Options for System  1 TO  1 are 0
+ 
+     **********************************************************************
+1 
+
+
+
+                             Simulation Time Steps
+                              Option 0 Selected
+                            Advection Factor = 0.000
+
+     User has chosen to permit negative solutions
+
+        DT         T          DT         T          DT         T     
+      ~~~~~~      ~~~~~~~   ~~~~~~      ~~~~~~~   ~~~~~~      ~~~~~~~
+
+      0.01500   120.00000
+
+
+
+
+
+
+                              Print Intervals
+
+      PRINT      ELAPSED       PRINT      ELAPSED       PRINT      ELAPSED 
+    INTERVAL      TIME       INTERVAL      TIME       INTERVAL      TIME   
+   ~~~~~~~~~~  ~~~~~~~~~~   ~~~~~~~~~~  ~~~~~~~~~~   ~~~~~~~~~~  ~~~~~~~~~~
+
+      20.000       80.00       5.000      120.00  
+1
+
+
+
+
+
+                             Exchange Coefficients
+                             ~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+                         Number of Exchange Fields =   1
+
+
+
+                         FIELD  1 has  2  Time Functions  
+
+                       SCALR = 0.100E+01  CONVR = 0.100E-03  
+
+
+
+
+
+                       Time Function  1 has  1 Exchanges
+
+
+                            A         EL     From  To
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                        0.501E+06 0.105E+02    1    2
+
+
+                   Number of Breaks in Time Function =   2
+
+
+          Dispersion    Time    Dispersion    Time    Dispersion    Time    
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+          0.800E+00  0.700E+02  0.800E+00  0.736E+04 
+
+
+                       Time Function  2 has  1 Exchanges
+
+
+                            A         EL     From  To
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                        0.243E+07 0.230E+02    3    4
+
+
+                   Number of Breaks in Time Function =   2
+
+
+          Dispersion    Time    Dispersion    Time    Dispersion    Time    
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+          0.200E+01  0.000E+00  0.200E+01  0.365E+03 
+
+
+               R Bypass Options for Systems 1 to  1 are  0
+1
+
+
+
+
+                                 VOLUMES
+                                 ~~~~~~~
+
+          Bed Volume Option =     0  Bed Time Step =  0.100E+01
+
+          Scale Factor =  0.1000E+01 Conversion Factor =  0.1000E+07
+
+
+  Seg #   BOTSG   Type       Volume      V mult    V exp   D mult    D exp
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+     1       2      1           3.210    0.020    0.000   10.000    0.000
+     2       5      2           7.200    0.020    0.000   11.000    0.000
+     3       4      1          16.200    0.020    0.000   10.000    0.000
+     4       5      2         116.800    0.020    0.000   36.000    0.000
+1
+
+
+
+
+                                     FLOWS
+                                     ~~~~~
+
+                             Flow Option  1 Used
+                          Number of Flow Fields =   5
+
+
+                        Field  1 has   3 Inflows      
+                        SCALQ = 0.100E+01  CONVQ = 0.283E-01
+
+
+
+                               Inflow Number  1
+                               ~~~~~~~~~~~~~~~~
+     Continuity Array:
+
+        Flow    From   To        Flow    From   To        Flow    From   To
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.100E+01    0    1      0.100E+01    1    3      0.100E+01    3    0
+
+
+     Number of Breaks in Time Function =     2
+
+
+
+        Flow      Time           Flow      Time           Flow      Time   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.100E+03 0.000E+00      0.100E+03 0.365E+03     
+
+
+                               Inflow Number  2
+                               ~~~~~~~~~~~~~~~~
+     Continuity Array:
+
+        Flow    From   To        Flow    From   To        Flow    From   To
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.100E+01    0    4      0.100E+01    4    2      0.100E+01    2    1
+      0.100E+01    1    3      0.100E+01    3    0     
+
+
+     Number of Breaks in Time Function =     2
+
+
+
+        Flow      Time           Flow      Time           Flow      Time   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.912E+03 0.000E+00      0.912E+03 0.365E+03     
+
+
+                               Inflow Number  3
+                               ~~~~~~~~~~~~~~~~
+     Continuity Array:
+
+        Flow    From   To        Flow    From   To        Flow    From   To
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.100E+01    0    4      0.100E+01    4    3      0.100E+01    3    0
+
+
+     Number of Breaks in Time Function =     2
+
+
+
+        Flow      Time           Flow      Time           Flow      Time   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.300E+04 0.000E+00      0.300E+04 0.365E+03     
+
+
+                        Field  2 has   0 Inflows      
+                        SCALQ = 0.100E+01  CONVQ = 0.100E+01
+
+
+
+                        Field  3 has   1 Inflows      
+                        SCALQ = 0.100E+01  CONVQ = 0.100E+01
+
+
+
+                               Inflow Number  1
+                               ~~~~~~~~~~~~~~~~
+     Solids Transport:
+
+        Area    From   To        Area    From   To        Area    From   To
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.501E+06    1    2      0.501E+06    2    5      0.243E+07    3    4
+      0.243E+07    4    5     
+
+
+     Number of Breaks in Time Function =     2
+
+
+
+      Velocity    Time         Velocity    Time         Velocity    Time   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.353E-05 0.000E+00      0.353E-05 0.365E+03     
+
+
+                        Field  4 has   1 Inflows      
+                        SCALQ = 0.100E+01  CONVQ = 0.100E+01
+
+
+
+                               Inflow Number  1
+                               ~~~~~~~~~~~~~~~~
+     Solids Transport:
+
+        Area    From   To        Area    From   To        Area    From   To
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.501E+06    1    2      0.501E+06    2    5      0.243E+07    3    4
+      0.243E+07    4    5     
+
+
+     Number of Breaks in Time Function =     2
+
+
+
+      Velocity    Time         Velocity    Time         Velocity    Time   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.353E-05 0.000E+00      0.353E-05 0.365E+03     
+
+
+                        Field  5 has   1 Inflows      
+                        SCALQ = 0.100E+01  CONVQ = 0.100E+01
+
+
+
+                               Inflow Number  1
+                               ~~~~~~~~~~~~~~~~
+     Solids Transport:
+
+        Area    From   To        Area    From   To        Area    From   To
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.501E+06    1    2      0.501E+06    2    5      0.243E+07    3    4
+      0.243E+07    4    5     
+
+
+     Number of Breaks in Time Function =     2
+
+
+
+      Velocity    Time         Velocity    Time         Velocity    Time   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.353E-05 0.000E+00      0.353E-05 0.365E+03     
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+
+
+          Q Bypass Options for Systems 1 to  1 are  0
+1
+
+
+
+                                Boundary Conditions
+                                ~~~~~~~~~~~~~~~~~~~
+
+
+                          Boundary Concentrations for System  1
+
+                      BC Option  0 Used     No.Of BC'S Read    3
+
+              Scale Factor =  0.1000E+01  Conversion Factor =  0.1000E+01
+
+
+
+
+         Segment  No.Brk.      BC(T)           T           BC(T)           T     
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              1      2      0.0000000E+00      0.00   0.0000000E+00    365.00
+                           
+              3      2      0.0000000E+00      0.00   0.0000000E+00    365.00
+                           
+              4      2      0.3500000E+02      0.00   0.3500000E+02    365.00
+                           
+                                   Waste Loads
+                                   ~~~~~~~~~~~
+
+
+
+                           Forcing Functions For System  1
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                     Wk Option  3 Used     No.of WK'S Read    0
+
+
+
+
+                        No Forcing Function for System  1
+1
+                                  Segment Parameters
+                                  ~~~~~~~~~~~~~~~~~~~
+
+
+ PARM     SCALE       PARM     SCALE       PARM     SCALE       PARM     SCALE       
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ TMPSG   0.100E+01    KESG   0.100E+01    FNH4   0.100E+01    FPO4   0.100E+01  
+ SOD1D   0.100E+01   ITOTL   0.110E+01    SAL    0.100E+01           0.000E+00  
+ 
+
+ Segment #   1
+ TMPSG   3 0.124E+02  KESG   5 0.180E+01  FNH4   7 0.000E+00  FPO4   8 0.000E+00
+ SOD1D   9 0.000E+00 ITOTL  13 0.100E+01  SAL    2 0.290E+02 7       0 0.000E+00
+ 
+
+ Segment #   2
+ TMPSG   3 0.750E+01  KESG   5 0.177E+01  FNH4   7 0.000E+00  FPO4   8 0.000E+00
+ SOD1D   9 0.000E+00 ITOTL  13 0.100E+01  SAL    2 0.322E+02 0       0 0.000E+00
+ 
+
+ Segment #   3
+ TMPSG   3 0.124E+02  KESG   5 0.174E+01  FNH4   7 0.000E+00  FPO4   8 0.000E+00
+ SOD1D   9 0.000E+00 ITOTL  13 0.100E+01  SAL    2 0.315E+02 0       0 0.000E+00
+ 
+
+ Segment #   4
+ TMPSG   3 0.750E+01  KESG   5 0.171E+01  FNH4   7 0.000E+00  FPO4   8 0.000E+00
+ SOD1D   9 0.000E+00 ITOTL  13 0.100E+01  SAL    2 0.322E+02 6       0 0.000E+00
+ 
+
+1
+                       Environmental and Chemical Constants
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+                    No Constants Enter for System  1:     GLOBALS
+ 
+
+                           NH3 Constants for System  2
+ 
+
+      Number of Constants for System  2;  Group nitrificat is  2
+
+
+  Constant     Const. #     K Value    Constant     Const. #     K Value   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  1320C        11        0.000E+00      1320T        12        0.108E+01     
+1
+                         Environmental Time Functions
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+                         Piecewise Linear Functions
+             VAL(T)      T         VAL(T)      T         VAL(T)      T  
+
+  ITOT    0.50000E+03   0.00    0.50000E+03 365.00
+     F    0.57600E+00   0.00    0.57600E+00 365.00
+  WIND    0.40000E+01   0.00    0.40000E+01 365.00
+ TFNH4    0.00000E+00   0.00    0.00000E+00 365.00
+ TFPO4    0.00000E+00   0.00    0.00000E+00 365.00
+1
+
+
+
+                            Initial Conditions
+                            ~~~~~~~~~~~~~~~~~~
+
+
+
+                    Initial Conditions for System 1
+    Particulate Fraction of System is Transported by Solids Field    3
+                        Density of System =  0.100E+01
+
+      1: 0.5260E+00 0.1000E+01     2: 0.4800E+00 0.1000E+01     3: 0.4260E+00 0.1000E+01
+      4: 0.3930E+00 0.1000E+01  
+
+
+
+               Stability Criteria for Numerical Integration
+
+                    System   Maximum Concentration
+                      1               45.00

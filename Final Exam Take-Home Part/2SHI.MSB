@@ -1,0 +1,9 @@
+ 
+
+                                                Mass Balance for Constituent  1
+                                                Initial Mass is   0.1159E+06 KG
+              ***** Accumulated Mass In (KG) *****   *********** Accumulated Mass Out (KG) ***********   Resident       Excess
+     Time     Advection    Dispersion    Loading     Advection    Dispersion     Buried      Kinetic     Mass (KG)    Mass (KG)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      0.000   0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00   0.1159E+06  -0.2627E-02
+     20.010   0.5247E+05   0.0000E+00   0.0000E+00   0.8212E+05   0.0000E+00   0.0000E+00   0.1474E+05   0.1010E+06  -0.2947E+05

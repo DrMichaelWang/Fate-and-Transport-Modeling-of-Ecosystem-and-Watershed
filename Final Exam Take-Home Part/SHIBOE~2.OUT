@@ -1,0 +1,845 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+     **********************************************************************
+
+             WASP  - - WATER QUALITY ANALYSIS SIMULATION PROGRAM
+
+     **********************************************************************
+ 
+
+                               Supported by
+                  Center for Exposure Assessment Modeling
+                                  (CEAM)
+                  Athens Environmental Research Laboratory
+                            College Station Road
+                          Athens, Georgia  30613
+                      FTS 250-3491 or (404) 546-3491
+
+
+                               Version 4.32      
+                   Compiled on: Date: Wednesday, 4 March 1992.
+
+
+                       Maximum Parameters for this Model
+
+             Systems:    8           Segments:   10     Break Points:    5
+          Parameters:   15          Constants:  104    Boundary Cond:   12
+         Waste Loads:   11     Print Interval:    5    Time Function:   23
+             
+
+     **********************************************************************
+
+
+
+     No. Segments --->     4        No. Systems --->     8
+
+
+ 
+
+     **********************************************************************                         TIME VARIABLE SOLUTION TECHNIQUE
+
+     **********************************************************************
+             System Bypass Options for System  1 TO  8 are 0 0 0 0 0 0 0 0
+ 
+     **********************************************************************
+1 
+
+
+
+                             Simulation Time Steps
+                              Option 0 Selected
+                            Advection Factor = 0.000
+
+     User has chosen to permit negative solutions
+
+        DT         T          DT         T          DT         T     
+      ~~~~~~      ~~~~~~~   ~~~~~~      ~~~~~~~   ~~~~~~      ~~~~~~~
+
+      0.01500   120.00000
+
+
+
+
+
+
+                              Print Intervals
+
+      PRINT      ELAPSED       PRINT      ELAPSED       PRINT      ELAPSED 
+    INTERVAL      TIME       INTERVAL      TIME       INTERVAL      TIME   
+   ~~~~~~~~~~  ~~~~~~~~~~   ~~~~~~~~~~  ~~~~~~~~~~   ~~~~~~~~~~  ~~~~~~~~~~
+
+      20.000       80.00       5.000      120.00  
+1
+
+
+
+
+
+                             Exchange Coefficients
+                             ~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+                         Number of Exchange Fields =   1
+
+
+
+                         FIELD  1 has  2  Time Functions  
+
+                       SCALR = 0.100E+01  CONVR = 0.100E-03  
+
+
+
+
+
+                       Time Function  1 has  1 Exchanges
+
+
+                            A         EL     From  To
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                        0.501E+06 0.105E+02    1    2
+
+
+                   Number of Breaks in Time Function =   2
+
+
+          Dispersion    Time    Dispersion    Time    Dispersion    Time    
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+          0.870E+00  0.000E+00  0.870E+00  0.365E+03 
+
+
+                       Time Function  2 has  1 Exchanges
+
+
+                            A         EL     From  To
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                        0.243E+07 0.230E+02    3    4
+
+
+                   Number of Breaks in Time Function =   2
+
+
+          Dispersion    Time    Dispersion    Time    Dispersion    Time    
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+          0.200E+01  0.000E+00  0.200E+01  0.365E+03 
+
+
+               R Bypass Options for Systems 1 to  8 are  0  0  0  0  0  0  0  0
+1
+
+
+
+
+                                 VOLUMES
+                                 ~~~~~~~
+
+          Bed Volume Option =     0  Bed Time Step =  0.100E+01
+
+          Scale Factor =  0.2000E+01 Conversion Factor =  0.1000E+07
+
+
+  Seg #   BOTSG   Type       Volume      V mult    V exp   D mult    D exp
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+     1       2      1           3.210    0.020    0.000   10.000    0.000
+     2       5      2           7.200    0.020    0.000   11.000    0.000
+     3       4      1          16.200    0.020    0.000   10.000    0.000
+     4       5      2         116.800    0.020    0.000   36.000    0.000
+1
+
+
+
+
+                                     FLOWS
+                                     ~~~~~
+
+                             Flow Option  1 Used
+                          Number of Flow Fields =   5
+
+
+                        Field  1 has   3 Inflows      
+                        SCALQ = 0.100E+01  CONVQ = 0.283E-01
+
+
+
+                               Inflow Number  1
+                               ~~~~~~~~~~~~~~~~
+     Continuity Array:
+
+        Flow    From   To        Flow    From   To        Flow    From   To
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.100E+01    0    1      0.100E+01    1    3      0.100E+01    3    0
+
+
+     Number of Breaks in Time Function =     2
+
+
+
+        Flow      Time           Flow      Time           Flow      Time   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.100E+03 0.000E+00      0.100E+03 0.365E+03     
+
+
+                               Inflow Number  2
+                               ~~~~~~~~~~~~~~~~
+     Continuity Array:
+
+        Flow    From   To        Flow    From   To        Flow    From   To
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.100E+01    0    4      0.100E+01    4    2      0.100E+01    2    1
+      0.100E+01    1    3      0.100E+01    3    0     
+
+
+     Number of Breaks in Time Function =     2
+
+
+
+        Flow      Time           Flow      Time           Flow      Time   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.912E+03 0.000E+00      0.912E+03 0.365E+03     
+
+
+                               Inflow Number  3
+                               ~~~~~~~~~~~~~~~~
+     Continuity Array:
+
+        Flow    From   To        Flow    From   To        Flow    From   To
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.100E+01    0    4      0.100E+01    4    3      0.100E+01    3    0
+
+
+     Number of Breaks in Time Function =     2
+
+
+
+        Flow      Time           Flow      Time           Flow      Time   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.300E+04 0.000E+00      0.300E+04 0.365E+03     
+
+
+                        Field  2 has   0 Inflows      
+                        SCALQ = 0.100E+01  CONVQ = 0.100E+01
+
+
+
+                        Field  3 has   1 Inflows      
+                        SCALQ = 0.100E+01  CONVQ = 0.100E+01
+
+
+
+                               Inflow Number  1
+                               ~~~~~~~~~~~~~~~~
+     Solids Transport:
+
+        Area    From   To        Area    From   To        Area    From   To
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.501E+06    1    2      0.501E+06    2    5      0.243E+07    3    4
+      0.243E+07    4    5     
+
+
+     Number of Breaks in Time Function =     2
+
+
+
+      Velocity    Time         Velocity    Time         Velocity    Time   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.353E-05 0.000E+00      0.353E-05 0.365E+03     
+
+
+                        Field  4 has   1 Inflows      
+                        SCALQ = 0.100E+01  CONVQ = 0.100E+01
+
+
+
+                               Inflow Number  1
+                               ~~~~~~~~~~~~~~~~
+     Solids Transport:
+
+        Area    From   To        Area    From   To        Area    From   To
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.501E+06    1    2      0.501E+06    2    5      0.243E+07    3    4
+      0.243E+07    4    5     
+
+
+     Number of Breaks in Time Function =     2
+
+
+
+      Velocity    Time         Velocity    Time         Velocity    Time   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.353E-05 0.000E+00      0.353E-05 0.365E+03     
+
+
+                        Field  5 has   1 Inflows      
+                        SCALQ = 0.100E+01  CONVQ = 0.100E+01
+
+
+
+                               Inflow Number  1
+                               ~~~~~~~~~~~~~~~~
+     Solids Transport:
+
+        Area    From   To        Area    From   To        Area    From   To
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.501E+06    1    2      0.501E+06    2    5      0.243E+07    3    4
+      0.243E+07    4    5     
+
+
+     Number of Breaks in Time Function =     2
+
+
+
+      Velocity    Time         Velocity    Time         Velocity    Time   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      0.353E-05 0.000E+00      0.353E-05 0.365E+03     
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+ QSUMX=      0.000
+
+
+          Q Bypass Options for Systems 1 to  8 are  0  0  0  0  0  0  0  0
+1
+
+
+
+                                Boundary Conditions
+                                ~~~~~~~~~~~~~~~~~~~
+
+
+                          Boundary Concentrations for System  1
+
+                      BC Option  0 Used     No.Of BC'S Read    3
+
+              Scale Factor =  0.1000E+01  Conversion Factor =  0.1000E+01
+
+
+
+
+         Segment  No.Brk.      BC(T)           T           BC(T)           T     
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              1      2      0.2900000E+01      0.00   0.2900000E+01    365.00
+                           
+              3      2      0.2900000E+01      0.00   0.2900000E+01    365.00
+                           
+              4      2      0.2000000E+00      0.00   0.2000000E+00    365.00
+                           
+
+
+                          Boundary Concentrations for System  2
+
+                      BC Option  0 Used     No.Of BC'S Read    3
+
+              Scale Factor =  0.1000E+01  Conversion Factor =  0.1000E+01
+
+
+
+
+         Segment  No.Brk.      BC(T)           T           BC(T)           T     
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              1      2      0.1000000E+00      0.00   0.1000000E+00    365.00
+                           
+              3      2      0.1000000E-01      0.00   0.1000000E-01    365.00
+                           
+              4      2      0.1000000E-01      0.00   0.1000000E-01    365.00
+                           
+
+
+                          Boundary Concentrations for System  3
+
+                      BC Option  0 Used     No.Of BC'S Read    3
+
+              Scale Factor =  0.1000E+01  Conversion Factor =  0.1000E+01
+
+
+
+
+         Segment  No.Brk.      BC(T)           T           BC(T)           T     
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              1      2      0.2900000E+00      0.00   0.2900000E+00    365.00
+                           
+              3      2      0.2900000E+00      0.00   0.2900000E+00    365.00
+                           
+              4      2      0.9000000E-01      0.00   0.9000000E-01    365.00
+                           
+
+
+                          Boundary Concentrations for System  4
+
+                      BC Option  0 Used     No.Of BC'S Read    3
+
+              Scale Factor =  0.1000E+01  Conversion Factor =  0.1000E+01
+
+
+
+
+         Segment  No.Brk.      BC(T)           T           BC(T)           T     
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              1      2      0.1000000E+01      0.00   0.1000000E+01    365.00
+                           
+              3      2      0.1000000E-01      0.00   0.1000000E-01    365.00
+                           
+              4      2      0.1000000E-01      0.00   0.1000000E-01    365.00
+                           
+
+
+                          Boundary Concentrations for System  5
+
+                      BC Option  0 Used     No.Of BC'S Read    3
+
+              Scale Factor =  0.1000E+01  Conversion Factor =  0.1000E+01
+
+
+
+
+         Segment  No.Brk.      BC(T)           T           BC(T)           T     
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              1      2      0.1000000E+01      0.00   0.1000000E+01    365.00
+                           
+              3      2      0.1000000E+01      0.00   0.1000000E+01    365.00
+                           
+              4      2      0.1000000E+01      0.00   0.1000000E+01    365.00
+                           
+
+
+                          Boundary Concentrations for System  6
+
+                      BC Option  0 Used     No.Of BC'S Read    3
+
+              Scale Factor =  0.1000E+01  Conversion Factor =  0.1000E+01
+
+
+
+
+         Segment  No.Brk.      BC(T)           T           BC(T)           T     
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              1      2      0.9200000E+01      0.00   0.9200000E+01    365.00
+                           
+              3      2      0.9200000E+01      0.00   0.9200000E+01    365.00
+                           
+              4      2      0.9200000E+01      0.00   0.9200000E+01    365.00
+                           
+
+
+                          Boundary Concentrations for System  7
+
+                      BC Option  0 Used     No.Of BC'S Read    3
+
+              Scale Factor =  0.1000E+01  Conversion Factor =  0.1000E+01
+
+
+
+
+         Segment  No.Brk.      BC(T)           T           BC(T)           T     
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              1      2      0.5000000E+00      0.00   0.5000000E+00    365.00
+                           
+              3      2      0.5000000E+00      0.00   0.5000000E+00    365.00
+                           
+              4      2      0.1000000E+00      0.00   0.1000000E+00    365.00
+                           
+
+
+                          Boundary Concentrations for System  8
+
+                      BC Option  0 Used     No.Of BC'S Read    3
+
+              Scale Factor =  0.1000E+01  Conversion Factor =  0.1000E+01
+
+
+
+
+         Segment  No.Brk.      BC(T)           T           BC(T)           T     
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              1      2      0.1000000E+00      0.00   0.1000000E+00    365.00
+                           
+              3      2      0.1000000E+00      0.00   0.1000000E+00    365.00
+                           
+              4      2      0.1000000E+00      0.00   0.1000000E+00    365.00
+                           
+                                   Waste Loads
+                                   ~~~~~~~~~~~
+
+
+
+                           Forcing Functions For System  1
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                     Wk Option  3 Used     No.of WK'S Read    2
+
+           Scale Factor =  0.1000E+01  Conversion Factor =  0.1000E+01
+
+
+         Segment  No.Brk.      WK(T)            T           WK(T)            T     
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              1      2      0.7000000E+01      0.00      0.7000000E+01    365.00
+                           
+              3      2      0.7000000E+01      0.00      0.7000000E+01    365.00
+                           
+
+
+                           Forcing Functions For System  2
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                     Wk Option  3 Used     No.of WK'S Read    0
+
+
+
+
+                        No Forcing Function for System  2
+1
+
+
+                           Forcing Functions For System  3
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                     Wk Option  3 Used     No.of WK'S Read    2
+
+           Scale Factor =  0.1000E+01  Conversion Factor =  0.1000E+01
+
+
+         Segment  No.Brk.      WK(T)            T           WK(T)            T     
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              1      2      0.7000000E+00      0.00      0.7000000E+00    365.00
+                           
+              3      2      0.7000000E+00      0.00      0.7000000E+00    365.00
+                           
+
+
+                           Forcing Functions For System  4
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                     Wk Option  3 Used     No.of WK'S Read    0
+
+
+
+
+                        No Forcing Function for System  4
+1
+
+
+                           Forcing Functions For System  5
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                     Wk Option  3 Used     No.of WK'S Read    0
+
+
+
+
+                        No Forcing Function for System  5
+1
+
+
+                           Forcing Functions For System  6
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                     Wk Option  3 Used     No.of WK'S Read    0
+
+
+
+
+                        No Forcing Function for System  6
+1
+
+
+                           Forcing Functions For System  7
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                     Wk Option  3 Used     No.of WK'S Read    0
+
+
+
+
+                        No Forcing Function for System  7
+1
+
+
+                           Forcing Functions For System  8
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                     Wk Option  3 Used     No.of WK'S Read    0
+
+
+
+
+                        No Forcing Function for System  8
+1
+                                  Segment Parameters
+                                  ~~~~~~~~~~~~~~~~~~~
+
+
+ PARM     SCALE       PARM     SCALE       PARM     SCALE       PARM     SCALE       
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ TMPSG   0.100E+01    KESG   0.100E+01    FNH4   0.100E+01    FPO4   0.100E+01  
+ SOD1D   0.100E+01   ITOTL   0.110E+01    SAL    0.100E+01           0.000E+00  
+ 
+
+ Segment #   1
+ TMPSG   3 0.124E+02  KESG   5 0.200E+00  FNH4   7 0.000E+00  FPO4   8 0.000E+00
+ SOD1D   9 0.000E+00 ITOTL  13 0.100E+01  SAL    2 0.291E+02         0 0.000E+00
+ 
+
+ Segment #   2
+ TMPSG   3 0.750E+01  KESG   5 0.200E+00  FNH4   7 0.000E+00  FPO4   8 0.000E+00
+ SOD1D   9 0.000E+00 ITOTL  13 0.100E+01  SAL    2 0.322E+02         0 0.000E+00
+ 
+
+ Segment #   3
+ TMPSG   3 0.124E+02  KESG   5 0.200E+00  FNH4   7 0.000E+00  FPO4   8 0.000E+00
+ SOD1D   9 0.000E+00 ITOTL  13 0.100E+01  SAL    2 0.315E+02         0 0.000E+00
+ 
+
+ Segment #   4
+ TMPSG   3 0.750E+01  KESG   5 0.200E+00  FNH4   7 0.000E+00  FPO4   8 0.000E+00
+ SOD1D   9 0.000E+00 ITOTL  13 0.100E+01  SAL    2 0.323E+02         0 0.000E+00
+ 
+
+1
+                       Environmental and Chemical Constants
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+                    No Constants Enter for System  1:     GLOBALS
+ 
+
+                           NH3 Constants for System  2
+ 
+
+      Number of Constants for System  2;  Group nitrificat is  2
+
+
+  Constant     Const. #     K Value    Constant     Const. #     K Value   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  1320C        11        0.200E-01      1320T        12        0.108E+01     
+ 
+
+                           NO3 Constants for System  3
+ 
+
+      Number of Constants for System  3;  Group   denitrif is  2
+
+
+  Constant     Const. #     K Value    Constant     Const. #     K Value   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  K140C        21        0.100E-01      K140T        22        0.108E+01     
+ 
+                    No Constants Enter for System  4:         PO4
+ 
+
+                          PHYT Constants for System  5
+ 
+
+      Number of Constants for System  5;  Group     growth is  2
+
+
+  Constant     Const. #     K Value    Constant     Const. #     K Value   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    K1C        41        0.200E+01        K1T        42        0.106E+01     
+ 
+
+      Number of Constants for System  5;  Group      light is  3
+
+
+  Constant     Const. #     K Value    Constant     Const. #     K Value   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  GHTSW        43        0.100E+01       CCHL        46        0.500E+02     
+    IS1        47        0.350E+03                    0        0.000E+00     
+ 
+
+      Number of Constants for System  5;  Group  nutrients is  4
+
+
+  Constant     Const. #     K Value    Constant     Const. #     K Value   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  KMNG1        48        0.250E-01      KMPG1        49        0.100E-02     
+   NCRB        58        0.250E+00       PCRB        57        0.250E-01     
+ 
+
+      Number of Constants for System  5;  Group      death is  4
+
+
+  Constant     Const. #     K Value    Constant     Const. #     K Value   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   K1RC        50        0.125E+00       K1RT        51        0.104E+01     
+    K1D        52        0.200E-01      KPZDC        55        0.200E-01     
+ 
+
+                          CBOD Constants for System  6
+ 
+
+      Number of Constants for System  6;  Group  deoxygent is  4
+
+
+  Constant     Const. #     K Value    Constant     Const. #     K Value   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    KDC        71        0.100E+00        KDT        72        0.105E+01     
+   KDSC        73        0.350E-01       KDST        74        0.108E+01     
+ 
+
+                            DO Constants for System  7
+ 
+
+      Number of Constants for System  7;  Group      ratio is  1
+
+
+  Constant     Const. #     K Value    Constant     Const. #     K Value   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   OCRB        81        0.267E+01                    0        0.000E+00     
+ 
+
+                            ON Constants for System  8
+ 
+
+      Number of Constants for System  8;  Group mineralize is  5
+
+
+  Constant     Const. #     K Value    Constant     Const. #     K Value   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  1013C        91        0.750E-01      1013T        92        0.108E+01     
+  KONDC        93        0.200E-01      KONDT        94        0.108E+01     
+    FON        95        0.850E+00                    0        0.000E+00     
+ 
+
+                            OP Constants for System  9
+ 
+
+      Number of Constants for System  9;  Group mineralize is  5
+
+
+  Constant     Const. #     K Value    Constant     Const. #     K Value   
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   K58C       100        0.220E+00       K58T       101        0.108E+01     
+  KOPDC       102        0.200E-01      KOPDT       103        0.108E+01     
+    FOP       103        0.850E+00                    0        0.000E+00     
+1
+                         Environmental Time Functions
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+                         Piecewise Linear Functions
+             VAL(T)      T         VAL(T)      T         VAL(T)      T  
+
+  ITOT    0.50000E+03   0.00    0.50000E+03 365.00
+     F    0.57600E+00   0.00    0.57600E+00 365.00
+  WIND    0.40000E+01   0.00    0.40000E+01 365.00
+ TFNH4    0.00000E+00   0.00    0.00000E+00 365.00
+ TFPO4    0.00000E+00   0.00    0.00000E+00 365.00
+1
+
+
+
+                            Initial Conditions
+                            ~~~~~~~~~~~~~~~~~~
+
+
+
+                    Initial Conditions for System 1
+    Particulate Fraction of System is Transported by Solids Field    3
+                        Density of System =  0.100E+01
+
+      1: 0.5260E+00 0.1000E+01     2: 0.4800E+00 0.1000E+01     3: 0.4260E+00 0.1000E+01
+      4: 0.3930E+00 0.1000E+01  
+
+
+                    Initial Conditions for System 2
+    Particulate Fraction of System is Transported by Solids Field    3
+                        Density of System =  0.269E+01
+
+      1: 0.5260E+00 0.1000E+01     2: 0.4800E+00 0.1000E+01     3: 0.4260E+00 0.1000E+01
+      4: 0.3930E+00 0.1000E+01  
+
+
+                    Initial Conditions for System 3
+    Particulate Fraction of System is Transported by Solids Field    3
+                        Density of System =  0.100E+01
+
+      1: 0.5260E+00 0.1000E+01     2: 0.4800E+00 0.1000E+01     3: 0.4260E+00 0.1000E+01
+      4: 0.3930E+00 0.1000E+01  
+
+
+                    Initial Conditions for System 4
+    Particulate Fraction of System is Transported by Solids Field    4
+                        Density of System =  0.100E+01
+
+      1: 0.5260E+00 0.0000E+00     2: 0.4800E+00 0.0000E+00     3: 0.4260E+00 0.0000E+00
+      4: 0.3930E+00 0.0000E+00  
+
+
+                    Initial Conditions for System 5
+    Particulate Fraction of System is Transported by Solids Field    3
+                        Density of System =  0.100E+01
+
+      1: 0.5260E+00 0.1000E+01     2: 0.4800E+00 0.1000E+01     3: 0.4260E+00 0.1000E+01
+      4: 0.3930E+00 0.1000E+01  
+
+
+                    Initial Conditions for System 6
+    Particulate Fraction of System is Transported by Solids Field    3
+                        Density of System =  0.269E+01
+
+      1: 0.5260E+00 0.1000E+01     2: 0.4800E+00 0.1000E+01     3: 0.4260E+00 0.1000E+01
+      4: 0.3930E+00 0.1000E+01  
+
+
+                    Initial Conditions for System 7
+    Particulate Fraction of System is Transported by Solids Field    3
+                        Density of System =  0.100E+01
+
+      1: 0.5260E+00 0.1000E+01     2: 0.4800E+00 0.1000E+01     3: 0.4260E+00 0.1000E+01
+      4: 0.3930E+00 0.1000E+01  
+
+
+                    Initial Conditions for System 8
+    Particulate Fraction of System is Transported by Solids Field    3
+                        Density of System =  0.269E+01
+
+      1: 0.5260E+00 0.1000E+01     2: 0.4800E+00 0.1000E+01     3: 0.4260E+00 0.1000E+01
+      4: 0.3930E+00 0.1000E+01  
+
+
+
+               Stability Criteria for Numerical Integration
+
+                    System   Maximum Concentration
+                      1        100000000.00
+                      2        100000000.00
+                      3        100000000.00
+                      4        100000000.00
+                      5        100000000.00
+                      6        100000000.00
+                      7        100000000.00
+                      8        100000000.00

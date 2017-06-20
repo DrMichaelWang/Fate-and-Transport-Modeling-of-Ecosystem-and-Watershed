@@ -1,0 +1,155 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+     **********************************************************************
+
+             WASP  - - WATER QUALITY ANALYSIS SIMULATION PROGRAM
+
+     **********************************************************************
+ 
+
+                               Supported by
+                  Center for Exposure Assessment Modeling
+                                  (CEAM)
+                  Athens Environmental Research Laboratory
+                            College Station Road
+                          Athens, Georgia  30613
+                      FTS 250-3491 or (404) 546-3491
+
+
+                               Version 4.32      
+                   Compiled on: Date: Wednesday, 4 March 1992.
+
+
+                       Maximum Parameters for this Model
+
+             Systems:    8           Segments:   10     Break Points:    5
+          Parameters:   15          Constants:  104    Boundary Cond:   12
+         Waste Loads:   11     Print Interval:    5    Time Function:   23
+             
+
+     **********************************************************************
+
+
+
+     No. Segments --->     4        No. Systems --->     1
+
+
+ 
+
+     **********************************************************************                         TIME VARIABLE SOLUTION TECHNIQUE
+
+     **********************************************************************
+             System Bypass Options for System  1 TO  1 are 0
+ 
+     **********************************************************************
+1 
+
+
+
+                             Simulation Time Steps
+                              Option 0 Selected
+                            Advection Factor = 0.000
+
+     User has chosen to permit negative solutions
+
+        DT         T          DT         T          DT         T     
+      ~~~~~~      ~~~~~~~   ~~~~~~      ~~~~~~~   ~~~~~~      ~~~~~~~
+
+      0.01500   120.00000
+
+
+
+
+
+
+                              Print Intervals
+
+      PRINT      ELAPSED       PRINT      ELAPSED       PRINT      ELAPSED 
+    INTERVAL      TIME       INTERVAL      TIME       INTERVAL      TIME   
+   ~~~~~~~~~~  ~~~~~~~~~~   ~~~~~~~~~~  ~~~~~~~~~~   ~~~~~~~~~~  ~~~~~~~~~~
+
+       0.150      200.00  
+1
+
+
+
+
+
+                             Exchange Coefficients
+                             ~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+                         Number of Exchange Fields =   1
+
+
+
+                         FIELD  1 has  2  Time Functions  
+
+                       SCALR = 0.100E+01  CONVR = 0.100E-03  
+
+
+
+
+
+                       Time Function  1 has  1 Exchanges
+
+
+                            A         EL     From  To
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                        0.501E+06 0.370E+00    1    2
+
+
+                   Number of Breaks in Time Function =   2
+
+
+          Dispersion    Time    Dispersion    Time    Dispersion    Time    
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+          0.000E+00  0.000E+00  0.000E+00  0.365E+03 
+
+
+                       Time Function  2 has  1 Exchanges
+
+
+                            A         EL     From  To
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                        0.243E+07 0.111E+01    3    4
+
+
+                   Number of Breaks in Time Function =   2
+
+
+          Dispersion    Time    Dispersion    Time    Dispersion    Time    
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+          0.500E-01  0.000E+00  0.500E-01  0.365E+03 
+
+
+               R Bypass Options for Systems 1 to  1 are  1
+1
+
+
+
+
+                                 VOLUMES
+                                 ~~~~~~~
+
+          Bed Volume Option =     0  Bed Time Step =  0.000E+00
+
+          Scale Factor =  0.1209E+05 Conversion Factor =  0.1000E+00
+
+
